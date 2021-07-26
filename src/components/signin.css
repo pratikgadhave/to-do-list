@@ -1,0 +1,86 @@
+.sign-in-container{
+    display: flex;
+    
+    
+    align-items: center;
+}
+.bucket-one{
+    width:50%;
+    padding-left: 50px;
+    background:linear-gradient(rgb(226, 187, 116), rgb(189, 82, 82));
+    height: 100vh;
+}
+.bucket-two{
+    width:50%;
+    padding-left: 0px;
+}
+.sign-in-btn{
+    padding: 250px 175px;
+}
+.sign-in-btn button{
+    width: 250px;
+    height: 50px;
+    padding: 10px 10px;
+    background-color: #1A73EA;
+    border-radius: 20px;
+    border:none;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    transition: color,background 0.5s;
+}
+.sign-in-btn button:hover{
+    color: black;
+    background-color: #468be4;
+}
+.info{
+    padding: 50px 50px;
+}
+.info img{
+    width: 450px;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+.info img:hover{
+    transform: translateY(-10px);
+}
+.info h1{
+    color: rgb(110, 56, 30);
+    font-size: 25px;
+    padding-bottom: 20px;
+    transition: transform 0.5s;
+}
+.info h1:hover{
+    color: rgb(134, 69, 37);
+    transform: translateY(-10px);
+
+}
+@media only screen and (max-width: 600px) {
+    .sign-in-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 150vw;
+        margin: auto auto;
+        padding: auto auto;
+        
+    }
+    .bucket-one{
+        
+        width: 150vw;
+    }
+    .bucket-two{
+        display: none;
+    }
+    .sign-in-btn{
+        padding: 150px 0px;
+    }
+    .sign-in-btn button{
+        width: 70vw;
+        height: auto;
+        
+    }
+
+  }

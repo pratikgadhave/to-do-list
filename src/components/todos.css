@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: radial-gradient(rgb(255, 142, 142) ,#e07e63);
+    color: white;
+    font-family:"Poppins","sans-serif";
+    min-height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header .app-name{
+    margin: 40px 50px;
+    width: 20vw;
+    transform: translateX(3.5vw);
+    height: 40px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    
+}
+.app-name h1{
+    
+    width: 30vw;
+}
+
+.sign-out-btn{
+    width: 90px;
+    height: 30px;
+    transform: translateX(200px);
+    border-radius: 10px;
+    border:none;
+    background-color: rgb(32, 128, 207);
+    color: white;
+    transition: background 0.5s;
+    
+}
+.sign-out-btn:hover{
+    background-color: rgb(225, 226, 228);
+    color: rgb(0, 0, 0);
+}
+
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input,form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+form button{
+    background: white;
+    color: tomato;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+form button:hover{
+    background:tomato;
+    color: white;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.todo-list{
+    
+    min-width: 30%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+.todo li{
+    flex: 1;
+    padding-left: 10px;
+}
+.todo-item{
+    padding: 5px 5px;
+}
+.trash-btn,.completed-btn{
+    background: tomato;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.completed-btn{
+    background: rgb(51, 173, 35);
+    
+}
+
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+.completed .completed-btn{
+    background-color: rgb(96, 124, 92);
+}
+.fall {
+    transform: translateY(10rem) rotateZ(20deg);
+    opacity: 0;
+  }
+  /*CUSTOM SELECTOR */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+  }
+  
+  /* Custom Select */
+  .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  select {
+    color: #ff6f47;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+    padding: 1rem;
+  }
+  /* Arrow */
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: #ff6f47;
+    cursor: pointer;
+    pointer-events: none;
+  }
+  .select:hover{
+      background: white;
+      color: black;
+  }
+  @media only screen and (max-width: 600px) {
+      .main-container{
+          width: 100vw;
+          height: max-content;
+          
+          margin-left: 0px;
+          margin-right: 0px;
+          overflow: hidden;
+          height: max-content;
+         
+          display: flex;
+          flex-direction: column;
+      }
+      .sign-out-btn{
+        width: 80px;
+        height: 25px;
+        transform: translateX(0px);
+        padding-right: 0;
+        margin-right: 0;
+        transform: translateY(-20px);
+        border-radius: 10px;
+        border:none;
+        background-color: rgb(32, 128, 207);
+        color: white;
+        transition: background 0.5s;
+        
+    }
+    .header{
+        width: 100vw;
+    }
+    .header .app-name{
+        margin: 50px 0px;
+        width: 60vw;
+        padding-left: 40px;
+        padding-top: 40px;
+        height: 40px;
+        padding-bottom: 0;
+        
+    }
+    .app-name h1{
+        
+        width: 100vw;
+        font-size: 30px;
+        
+    }
+    .input-bar{
+        width: auto;
+        
+        padding: 0px 20px;
+        margin-top: 0;
+    }
+    .input-bar input{
+        width: 70vw;
+        height: 45px;
+    }
+    .input-bar button{
+        height: 45px;
+    }
+    .todo-list{
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        
+    }
+    .todo{
+        margin: 20px;
+        height: 7vh;
+    }
+    .completed-btn,.trash-btn{
+        height: 7vh;
+        width: 7vh;
+    }
+  }
